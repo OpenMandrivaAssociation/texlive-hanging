@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/hanging
+# catalog-date 2009-11-02 14:28:41 +0100
+# catalog-license lppl1.3
+# catalog-version 1.2b
 Name:		texlive-hanging
 Version:	1.2b
 Release:	1
@@ -49,6 +55,7 @@ advantage of the support offered in recent versions of pdfTeX.
 #- source
 %doc %{_texmfdistdir}/source/latex/hanging/hanging.dtx
 %doc %{_texmfdistdir}/source/latex/hanging/hanging.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ advantage of the support offered in recent versions of pdfTeX.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
