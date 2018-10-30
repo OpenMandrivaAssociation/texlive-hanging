@@ -6,7 +6,7 @@
 # catalog-version 1.2b
 Name:		texlive-hanging
 Version:	1.2b
-Release:	11
+Release:	12
 Summary:	Hanging paragraphs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/hanging
